@@ -19,6 +19,7 @@ yarn create playwright
 npm install --save dotenv
 
 Running Tests
+
 Run all tests: 
 npx playwright test
 
@@ -44,16 +45,23 @@ npx playwright show-report
 
 Configuration
 
-The playwright.config.js file contains various settings:  
+The playwright.config.js file contains various settings: 
+
 •	Browsers configuration
+
 •	Retry settings
+
 •	Parallel execution settings
 
 Contributing 
 
 1.	Fork the repository
+   
 2.	Create your feature branch
+   
 3.	Commit your changes
+   
 4.	Push to the branch
+   
 5.	Create a Pull Request
 
