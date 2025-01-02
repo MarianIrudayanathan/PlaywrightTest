@@ -18,24 +18,6 @@ yarn create playwright
 4.	Install dotenv:
 npm install --save dotenv
 
-Project Structure
-├── tests/
-│   ├── Path/                   # End-to-end test files
-│   │   ├── login.spec.js
-│   ├── Pages/                 # Page Object files
-│   │   ├── basePage.js
-│   │   └── signInPage.js
-│   ├── Fixture/              # Test data files
-│   │   └── fixture.js
-        └── axeFixture.js
-        └── pageFixture.js
-│   └── utils/                 # Utility functions
-│       └── assertionUtils.js
-├── playwright.config.js       # Playwright configuration
-├── package.json
-└── README.md
-
-
 Running Tests
 Run all tests
 npx playwright test
