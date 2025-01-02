@@ -19,35 +19,38 @@ yarn create playwright
 npm install --save dotenv
 
 Running Tests
-Run all tests
+Run all tests: 
 npx playwright test
 
-Run tests in headed mode
+Run tests in headed mode: 
 npx playwright test login.spec.js --headed
 
-Run tests in a specific browser
+Run tests in a specific browser: 
 npx playwright test –project=chromium
 
-Run a specific test file
+Run a specific test file: 
 npx playwright test login.spec.js
 
-Run tests in debug mode
+Run tests in debug mode: 
 npx playwright test --debug
 
-Test Reports
-After test execution, HTML report will be generated in:
+Test Reports:
+
+After test execution, HTML report will be generated in: 
 playwright-report/index.html
 
-To open the last HTML report:
+To open the last HTML report: 
 npx playwright show-report
 
 Configuration
-The playwright.config.js file contains various settings:
+
+The playwright.config.js file contains various settings:  
 •	Browsers configuration
 •	Retry settings
 •	Parallel execution settings
 
-Contributing
+Contributing 
+
 1.	Fork the repository
 2.	Create your feature branch
 3.	Commit your changes
