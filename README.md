@@ -18,9 +18,6 @@ yarn install
 3.	Install Playwright/test:
 yarn create playwright
 
-4.	Install dotenv:
-npm install --save dotenv
-
 Running Tests:
 
 Run all tests: 
