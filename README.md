@@ -1,8 +1,11 @@
 Playwright Test Automation Project
+
 This repository contains automated tests using Playwright with JavaScript for a Test Project on Login functionality.
 
 Prerequisites:
+
 •	Node.js 14 or higher
+
 •	npm (Node Package Manager)
 
 Installation:
