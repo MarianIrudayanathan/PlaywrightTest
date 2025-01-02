@@ -10,7 +10,7 @@ Prerequisites:
 
 Installation:
 1.	Clone the repository:
-git clone https://github.com/MarianIrudayanathan/PlaywrightTest.git'
+git clone https://github.com/MarianIrudayanathan/PlaywrightTest.git
 
 2.	Install dependencies:
 yarn install
