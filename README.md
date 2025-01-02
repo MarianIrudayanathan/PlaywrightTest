@@ -1,11 +1,11 @@
 Playwright Test Automation Project
 This repository contains automated tests using Playwright with JavaScript for a Test Project on Login functionality.
 
-Prerequisites
+Prerequisites:
 •	Node.js 14 or higher
 •	npm (Node Package Manager)
 
-Installation
+Installation:
 1.	Clone the repository:
 git clone https://github.com/MarianIrudayanathan/PlaywrightTest.git'
 
@@ -18,7 +18,7 @@ yarn create playwright
 4.	Install dotenv:
 npm install --save dotenv
 
-Running Tests
+Running Tests:
 
 Run all tests: 
 npx playwright test
@@ -43,7 +43,7 @@ playwright-report/index.html
 To open the last HTML report: 
 npx playwright show-report
 
-Configuration
+Configuration:
 
 The playwright.config.js file contains various settings: 
 
@@ -53,7 +53,7 @@ The playwright.config.js file contains various settings:
 
 •	Parallel execution settings
 
-Contributing 
+Contributing:
 
 1.	Fork the repository
    
