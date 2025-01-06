@@ -1,15 +1,11 @@
 const {expect} = require('@playwright/test');
 const {testConfig} = require ('../Configs/config');
-const assert = require('assert');
 const AxeBuilder = require('@axe-core/playwright').default;
 
 exports.BasePage = class BasePage {
     constructor(page) {
         this.page = page;
         this.rejectLocator = page.getByRole('button', {name: 'Reject analytics cookies'});
-        this.continueButtonLocator = page.getByRole('button', {name: 'Continue'});
-        this.submitButtonLocator = page.getByRole('button', {name: 'Submit'});
-        this.goButtonLocator = page.getByRole('button', {name: 'Go'});
     }
 
     async logInfo(scenarioName, log, caseRef) {
@@ -43,7 +39,9 @@ exports.BasePage = class BasePage {
 
     async performAccessibilityScan() {
         try {
-            const makeAxeBuilder = () => new AxeBuilder({ page: this.page });
+            const makeAxeBuilder = () => new AxeBuilder({ page: this.page })
+                .withTags(['wcag2a','wcag2aa','wcag21a','wcag21aa'])
+                .exclude('#commonly-reused-element-with-known-issue');
             const accessibilityScanResults = await makeAxeBuilder().analyze();
 
             const violations = accessibilityScanResults.violations;

@@ -1,6 +1,4 @@
-const {mergeTests, mergeExpects} = require('@playwright/test');
+const {mergeTests} = require('@playwright/test');
 const {test: pages} = require('./pageFixture');
-const {test: a11yTest,expect: a11yExpect}  = require('./axeFixture');
 
-export const test = mergeTests(pages, a11yTest);
-export const expect = mergeExpects(a11yExpect);
+export const test = mergeTests(pages);
