@@ -10,6 +10,7 @@ exports.SignInPage = class SignInPage extends BasePage {
         this.page = page;
         this.usernameLocator = this.page.getByText('Email address', {exact: true});
         this.passwordLocator = this.page.getByText('Password', {exact: true});
+        this.caseListPageLocator = this.page.getByRole('link', {name: 'Case list'});
         this.submitButtonLocator = page.getByRole('button', {name: 'Sign in'});
     }
 
@@ -39,6 +40,7 @@ exports.SignInPage = class SignInPage extends BasePage {
 
         if (!result.passed) {
             console.log('Login Successful');
+            await expect(this.caseListPageLocator).toBeVisible();
 
             // Accessibility check after login
             const accessibilityResults = await this.performAccessibilityScan();
