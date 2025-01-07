@@ -9,7 +9,7 @@
     "@types/node": "^22.9.0"
   },
   "scripts": {
-    "test-sample": "npx playwright test login.spec.js --headed"
+    "test-sample": "npx playwright test login.spec.js --workers=9 --headed"
   },
   "dependencies": {
     "@axe-core/playwright": "^4.10.1",

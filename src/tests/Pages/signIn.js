@@ -16,7 +16,7 @@ exports.SignInPage = class SignInPage extends BasePage {
     async launchPage () {
         await this.page.goto(`${testConfig.TestBackOfficeUrl}/`);
         await this.page.waitForTimeout(testConfig.ManualDelayLong);
-        await expect(this.page.getByRole('heading', {name: 'Sign in', exact: true}, {timeout: 6000})).toBeVisible();
+        await expect(this.page.getByRole('heading', {name: 'Sign in', exact: true})).toBeVisible();
     }
 
     async enterUserCredentials (useProfessionalUser, signInDelay = testConfig.SignInDelayDefault) {
