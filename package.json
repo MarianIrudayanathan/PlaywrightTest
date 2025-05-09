@@ -9,7 +9,7 @@
     "@types/node": "^22.9.0"
   },
   "scripts": {
-    "test-sample": "npx playwright test example.spec.js --headed"
+    "test-sample": "npx playwright test inventory-api.spec.js"
   },
   "dependencies": {
     "@axe-core/playwright": "^4.10.1",
