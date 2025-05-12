@@ -13,10 +13,5 @@ export const testConfig = {
     UpdateProductQuantity: 75,
     OrderQuantity: 2,
     InvalidProductType: 'type',
-    IncorrectProductId: 123,
-    SignInDelayDefault: process.env.E2E_AUTO_DELAY_ENABLED === 'true' ? 2 : 0,
-    RejectCookies: false,
-    RejectCookieDelay: 2,
-    CaseDetailsDelayDefault: 2,
-    GetCaseRefFromUrlDelay: 2
+    IncorrectProductId: 123
 };
