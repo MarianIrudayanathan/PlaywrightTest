@@ -31,7 +31,6 @@ jobs:
 
       - name: Run API tests
         env:
-          # Secrets injected from GitHub — never hardcoded
           STUDENT_EMAIL:      ${{ secrets.STUDENT_EMAIL }}
           STUDENT_PASSWORD:   ${{ secrets.STUDENT_PASSWORD }}
           INSTRUCTOR_EMAIL:   ${{ secrets.INSTRUCTOR_EMAIL }}
